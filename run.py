@@ -1,4 +1,4 @@
-from base.base import DataFetcher
+from base.base import OptionHandler
 
 if __name__ == "__main__":
     print("+-----------------------------------------------+")
@@ -11,4 +11,4 @@ if __name__ == "__main__":
     print("+-----------------------------------------------+")
     option = input("Enter your choice (1 or 2 or 3): ")
 
-    DataFetcher.perform_option(option)
+    OptionHandler.perform_option(option)

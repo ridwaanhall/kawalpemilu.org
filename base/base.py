@@ -22,6 +22,7 @@ class DataFetcher:
             print("Error fetching data:", e)
             return None
 
+class OptionHandler:
     @staticmethod
     def perform_option(option):
         if option == "1":
@@ -48,23 +49,22 @@ class DataFetcher:
             json_data = DataFetcher.fetch_data_from_url(url1, payload1, headers1)
             if json_data:
                 print("JSON Data fetched successfully from cloudfunctions.net!")
-                # print(json_data)
             else:
                 print("Failed to fetch JSON data from cloudfunctions.net.")
+                
         elif option == "2":
             url2 = "https://kawalpemilu.org/assets/tps.json"
             json_data = DataFetcher.fetch_json_data(url2)
             if json_data:
                 print("JSON Data fetched successfully from kawalpemilu.org!")
-                # print(json_data)
             else:
                 print("Failed to fetch JSON data from kawalpemilu.org.")
+                
         elif option == "3":
-            url2 = "https://kawalpemilu.org/assets/tps2.json"
-            json_data = DataFetcher.fetch_json_data(url2)
+            url3 = "https://kawalpemilu.org/assets/tps2.json"
+            json_data = DataFetcher.fetch_json_data(url3)
             if json_data:
                 print("JSON Data fetched successfully from kawalpemilu.org!")
-                # print(json_data)
             else:
                 print("Failed to fetch JSON data from kawalpemilu.org.")
         else:
