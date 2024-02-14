@@ -49,6 +49,7 @@ class OptionHandler:
             json_data = DataFetcher.fetch_data_from_url(url1, payload1, headers1)
             if json_data:
                 print("JSON Data fetched successfully from cloudfunctions.net!")
+                print(json_data)
             else:
                 print("Failed to fetch JSON data from cloudfunctions.net.")
                 
@@ -57,6 +58,7 @@ class OptionHandler:
             json_data = DataFetcher.fetch_json_data(url2)
             if json_data:
                 print("JSON Data fetched successfully from kawalpemilu.org!")
+                print(json_data)
             else:
                 print("Failed to fetch JSON data from kawalpemilu.org.")
                 
@@ -65,6 +67,7 @@ class OptionHandler:
             json_data = DataFetcher.fetch_json_data(url3)
             if json_data:
                 print("JSON Data fetched successfully from kawalpemilu.org!")
+                print(json_data)
             else:
                 print("Failed to fetch JSON data from kawalpemilu.org.")
         else:
