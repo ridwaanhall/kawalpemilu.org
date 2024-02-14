@@ -3,7 +3,7 @@ import requests
 def fetch_json_data(url):
     try:
         response = requests.get(url)
-        response.raise_for_status()  # Raise an exception for 4xx and 5xx status codes
+        response.raise_for_status()
         json_data = response.json()
         return json_data
     except requests.exceptions.RequestException as e:
@@ -16,6 +16,5 @@ if __name__ == "__main__":
     if json_data:
         print("JSON Data fetched successfully!")
         # print(json_data)
-        # Do whatever you want with the JSON data here
     else:
         print("Failed to fetch JSON data.")
